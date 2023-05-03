@@ -1,6 +1,6 @@
 class Materias:
-    def __init__(self, nombre, grado, nombre_profesor):
-        self.nombre = nombre
+    def __init__(self, nombre_materia, grado, nombre_profesor):
+        self.nombre_materia = nombre_materia
         self.grado = grado
         self.nombre_profesor = nombre_profesor
 
@@ -10,6 +10,6 @@ class Materias:
 
 
 materia = Materias("Matematicas", "8°", "Fernando")
-print(materia.nombre, materia.grado, materia.nombre_profesor)
+print(materia.nombre_materia, materia.grado, materia.nombre_profesor)
 
 materia.cambio_profesor("Geronimo")
