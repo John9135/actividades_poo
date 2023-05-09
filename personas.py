@@ -6,12 +6,7 @@ class Personas:
         self.genero = genero
 
     def presentarse(self):
-        print(f"Mi nombre es {self.nombre_persona} tengo {self.edad} de edad")
-
-
-persona = Personas("Alexander Palacio", 12, "Desarrollador", "Masculino")
-persona.presentarse()
-
+        print(f"Mi nombre es {self.nombre_persona} tengo {self.edad} de edad \n")
 
 # ----------------------------------------------------------------------------------
 class Alumnos(Personas):
@@ -50,6 +45,8 @@ class Alumnos(Personas):
     def set_nombre_profesor(self, nombre_profesor):
         self._nombre_profesor = nombre_profesor
 
+persona = Personas("Alexander Palacio", 12, "Desarrollador", "Masculino")
+persona.presentarse()
 
 alumno = Alumnos("Fernanda Zuluaga", 10, "Estudiante", "Femenino", "5°")
 print(alumno.nombre_persona, alumno.edad,
